@@ -24,6 +24,8 @@ new Vue({
 			
 			axios.delete(url).then(response => {
 				this.getKeeps();
+				// Notificación
+				toastr.success('Eliminado correctamente');
 			});
 		}
 	}
