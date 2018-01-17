@@ -9,6 +9,7 @@ new Vue({
 	{
 		keeps: [],
 		newKeep: '',
+		fillKeep: {'id': '', 'keep': ''},
 		errors: []
 	},
 	methods: 
@@ -19,6 +20,16 @@ new Vue({
 			axios.get(urlKeeps).then(response => {
 				this.keeps = response.data
 			});
+		},
+		editKeep: function(keep)
+		{
+			this.fillKeep.id   = keep.id;
+			this.fillKeep.keep = keep.keep;
+			$('#edit').modal('show');
+		},
+		updateKeep: function(id)
+		{
+			alert('edición');
 		},
 		deleteKeep: function(keep)
 		{
