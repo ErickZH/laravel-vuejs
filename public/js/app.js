@@ -25527,7 +25527,7 @@ new Vue({
 		{
 			var urlKeeps = 'tasks';
 			axios.get(urlKeeps).then(response => {
-				this.keeps = response.data
+				this.keeps = response.data.tasks.data
 			});
 		},
 		editKeep: function(keep)
