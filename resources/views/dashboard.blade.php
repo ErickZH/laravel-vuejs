@@ -5,7 +5,7 @@
 		<div class="col-xs-12">
 			<h1 class="page-header">CRUD Laravel & Vue js</h1>
 		</div>
-		<div class="col-sm-7">
+		<div class="col-sm-12">
 			<a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#create">Nueva tarea</a>
 			<table class="table table-hover table-striped">
 				<thead>
@@ -53,11 +53,6 @@
 
 			@include('create')
 			@include('edit')
-		</div>
-		<div class="col-sm-5">
-			<pre>
-				@{{ $data }}
-			</pre>
 		</div>
 	</div>
 @endsection
