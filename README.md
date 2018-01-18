@@ -31,7 +31,7 @@ DB_USERNAME=root
 DB_PASSWORD=******
 ```
 
-###### Creamos el APP_KEY del proyecto.
+##### Creamos el APP_KEY del proyecto.
 ```php
 php artisan key:generate
 ```
@@ -46,7 +46,7 @@ npm install
 php artisan migrate
 ```
 
-##### Corremos el seed el cual genara tareas randoms.
+##### Corremos el seed el cual genera tareas randoms.
 ```
 php artisan db:seed
 ```
